@@ -111,6 +111,27 @@ const Index = () => {
     }
   ];
 
+  const testimonials = [
+    {
+      name: "Анна Петрова",
+      event: "Свадьба",
+      text: "Огромное спасибо команде за организацию нашей свадьбы! Гости до сих пор вспоминают ваши блюда. Всё было безупречно!",
+      rating: 5
+    },
+    {
+      name: "Дмитрий Соколов",
+      event: "Корпоратив",
+      text: "Заказывали кейтеринг на корпоративное мероприятие на 150 человек. Профессиональный подход, вкусная еда, всё прошло отлично!",
+      rating: 5
+    },
+    {
+      name: "Елена Волкова",
+      event: "День рождения",
+      text: "Отмечали юбилей мамы. Меню составили индивидуально, учли все пожелания. Было очень вкусно и красиво!",
+      rating: 5
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border relative">
@@ -329,6 +350,37 @@ const Index = () => {
                 <Button className="w-full" variant={option.popular ? "default" : "outline"}>
                   Выбрать тариф
                 </Button>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-card/50 backdrop-blur-sm relative z-10">
+        <div className="container mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-5xl font-bold mb-4">
+              <span className="font-handwriting text-6xl italic drop-shadow-md" style={{color: '#5a7c3e', letterSpacing: '0.05em'}}>Отзывы</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">Что говорят наши клиенты</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {testimonials.map((testimonial, index) => (
+              <Card
+                key={index}
+                className="p-8 hover:shadow-xl transition-all duration-300 border-2 bg-background"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="flex gap-1 mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-yellow-500 fill-yellow-500" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed italic">"{testimonial.text}"</p>
+                <div className="border-t border-border pt-4">
+                  <p className="font-semibold text-foreground">{testimonial.name}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.event}</p>
+                </div>
               </Card>
             ))}
           </div>
