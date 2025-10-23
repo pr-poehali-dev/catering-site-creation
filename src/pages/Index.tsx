@@ -67,21 +67,13 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background relative">
-      <div className="fixed inset-0 z-0 opacity-[0.03] pointer-events-none">
-        <img 
-          src="https://cdn.poehali.dev/files/b0834f1b-b021-4fa7-bbbc-2056a068ade7.jpg" 
-          alt="background pattern" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-32 opacity-60 pointer-events-none">
+    <div className="min-h-screen bg-background">
+      <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border relative overflow-visible">
+        <div className="absolute -top-4 -right-8 w-48 h-48 pointer-events-none animate-float">
           <img 
-            src="https://cdn.poehali.dev/files/b0834f1b-b021-4fa7-bbbc-2056a068ade7.jpg" 
-            alt="tomatoes decoration" 
-            className="w-full h-full object-cover object-top"
-            style={{objectPosition: 'top right'}}
+            src="https://cdn.poehali.dev/projects/2c278eaa-1110-4b57-93ce-468753acaa53/files/70d57081-eeea-4a94-9934-70ab300877c8.jpg" 
+            alt="cherry tomatoes" 
+            className="w-full h-full object-contain drop-shadow-lg"
           />
         </div>
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
