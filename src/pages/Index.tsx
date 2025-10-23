@@ -28,14 +28,14 @@ const Index = () => {
 
   const menuItems = [
     {
+      title: "Фуршетное ассорти",
+      description: "Разнообразие изысканных закусок и канапе",
+      image: "https://cdn.poehali.dev/files/5a845563-c56f-4dab-9de9-430a902c948f.jpg"
+    },
+    {
       title: "Горячие блюда",
       description: "Изысканные мясные и рыбные деликатесы",
       image: "https://cdn.poehali.dev/projects/2c278eaa-1110-4b57-93ce-468753acaa53/files/27bbdfa1-e4a7-445d-85c2-8abc276c70f6.jpg"
-    },
-    {
-      title: "Закуски",
-      description: "Разнообразие холодных и горячих закусок",
-      image: "https://cdn.poehali.dev/projects/2c278eaa-1110-4b57-93ce-468753acaa53/files/2a69830c-ff0f-4d60-b0f0-e6912950537a.jpg"
     },
     {
       title: "Десерты",
