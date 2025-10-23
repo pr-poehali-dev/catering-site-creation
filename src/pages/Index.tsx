@@ -67,8 +67,15 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border">
+    <div className="min-h-screen bg-background relative">
+      <div className="fixed inset-0 z-0 opacity-[0.03] pointer-events-none">
+        <img 
+          src="https://cdn.poehali.dev/files/b0834f1b-b021-4fa7-bbbc-2056a068ade7.jpg" 
+          alt="background pattern" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border relative">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <span className="font-serif text-4xl font-bold text-primary">Смакуем</span>
@@ -86,7 +93,7 @@ const Index = () => {
         </div>
       </header>
 
-      <section id="home" className="pt-32 pb-20 px-4">
+      <section id="home" className="pt-32 pb-20 px-4 relative z-10">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
@@ -135,7 +142,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="services" className="py-20 px-4 bg-card">
+      <section id="services" className="py-20 px-4 bg-card/80 backdrop-blur-sm relative z-10">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-bold mb-4">
@@ -161,7 +168,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="menu" className="py-20 px-4">
+      <section id="menu" className="py-20 px-4 relative z-10">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-bold mb-4">
@@ -194,7 +201,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contacts" className="py-20 px-4 bg-card">
+      <section id="contacts" className="py-20 px-4 bg-card/80 backdrop-blur-sm relative z-10">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-bold mb-4">
@@ -265,7 +272,7 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-foreground text-background py-12 px-4">
+      <footer className="bg-foreground text-background py-12 px-4 relative z-10">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
