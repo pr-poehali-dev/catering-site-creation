@@ -71,7 +71,7 @@ const Index = () => {
       <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <span className="font-handwriting text-4xl text-primary">Кейтеринг</span>
+            <span className="font-serif text-4xl font-bold text-primary">Смакуем</span>
           </div>
           <nav className="hidden md:flex gap-8">
             <a href="#home" className="text-foreground hover:text-primary transition-colors">Главная</a>
@@ -269,7 +269,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
-              <h3 className="font-handwriting text-3xl mb-4">Кейтеринг</h3>
+              <h3 className="font-serif text-3xl font-bold mb-4">Смакуем</h3>
               <p className="opacity-80">Вкусные блюда для вашего события</p>
             </div>
             <div>
