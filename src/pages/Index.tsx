@@ -79,13 +79,25 @@ const Index = () => {
               </svg>
             </div>
           </div>
-          <nav className="hidden md:flex gap-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">Главная</a>
-            <a href="#menu" className="text-foreground hover:text-primary transition-colors">Меню</a>
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
-            <a href="#contacts" className="text-foreground hover:text-primary transition-colors">Контакты</a>
+          <nav className="hidden md:flex gap-2">
+            <a href="#home" className="px-4 py-2 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-300 font-medium relative group">
+              Главная
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-300"></span>
+            </a>
+            <a href="#menu" className="px-4 py-2 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-300 font-medium relative group">
+              Меню
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-300"></span>
+            </a>
+            <a href="#services" className="px-4 py-2 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-300 font-medium relative group">
+              Мероприятия
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-300"></span>
+            </a>
+            <a href="#contacts" className="px-4 py-2 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-300 font-medium relative group">
+              Контакты
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-300"></span>
+            </a>
           </nav>
-          <Button className="hidden md:flex">
+          <Button className="hidden md:flex shadow-lg hover:shadow-xl transition-shadow duration-300 bg-primary hover:bg-primary/90">
             <Icon name="Phone" size={16} className="mr-2" />
             Заказать
           </Button>
