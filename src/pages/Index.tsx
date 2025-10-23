@@ -68,14 +68,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border relative overflow-visible">
-        <div className="absolute -top-4 -right-8 w-48 h-48 pointer-events-none animate-float">
-          <img 
-            src="https://cdn.poehali.dev/projects/2c278eaa-1110-4b57-93ce-468753acaa53/files/70d57081-eeea-4a94-9934-70ab300877c8.jpg" 
-            alt="cherry tomatoes" 
-            className="w-full h-full object-contain drop-shadow-lg"
-          />
-        </div>
+      <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border relative">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="relative flex flex-col items-start leading-none">
@@ -103,19 +96,11 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <div className="relative">
-                <div className="absolute -top-8 -left-4 w-32 h-32 opacity-20">
-                  <img 
-                    src="https://cdn.poehali.dev/files/b258a2cb-7ab9-4ff4-be2e-d769b9b71516.jpg" 
-                    alt="decoration" 
-                    className="w-full h-full object-contain animate-float"
-                  />
-                </div>
+              <div>
                 <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6">
                   Вкусные блюда<br/>
                   <span className="font-handwriting text-primary text-7xl md:text-8xl">для вашего события</span>
                 </h1>
-              </div>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                 Превращаем каждое мероприятие в кулинарный шедевр. 
                 Свежие продукты, авторские рецепты и безупречный сервис.
@@ -130,14 +115,7 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-            <div className="relative animate-scale-in">
-              <div className="absolute top-0 right-0 w-40 h-40 opacity-30 animate-float" style={{ animationDelay: '1s' }}>
-                <img 
-                  src="https://cdn.poehali.dev/files/b258a2cb-7ab9-4ff4-be2e-d769b9b71516.jpg" 
-                  alt="decoration" 
-                  className="w-full h-full object-contain"
-                />
-              </div>
+            <div className="animate-scale-in">
               <img
                 src="https://cdn.poehali.dev/projects/2c278eaa-1110-4b57-93ce-468753acaa53/files/27bbdfa1-e4a7-445d-85c2-8abc276c70f6.jpg"
                 alt="Catering"
