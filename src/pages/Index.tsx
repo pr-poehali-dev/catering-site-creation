@@ -96,11 +96,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <div>
-                <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6">
-                  Вкусные блюда<br/>
-                  <span className="font-handwriting text-primary text-7xl md:text-8xl">для вашего события</span>
-                </h1>
+              <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6">
+                Вкусные блюда<br/>
+                <span className="font-handwriting text-primary text-7xl md:text-8xl">для вашего события</span>
+              </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                 Превращаем каждое мероприятие в кулинарный шедевр. 
                 Свежие продукты, авторские рецепты и безупречный сервис.
