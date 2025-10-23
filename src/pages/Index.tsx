@@ -79,10 +79,10 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="relative flex flex-col items-start leading-none">
-              <span className="font-handwriting text-3xl text-primary">Смакуем</span>
-              <span className="font-display text-5xl font-bold text-foreground tracking-wider -mt-2">КЕЙТЕРИНГ</span>
-              <svg className="absolute -bottom-2 left-0 w-64 h-8" viewBox="0 0 250 30" fill="none">
-                <path d="M2 15 Q60 5, 120 12 T240 15" stroke="hsl(var(--primary))" strokeWidth="2" fill="none" opacity="0.6"/>
+              <span className="font-handwriting text-6xl" style={{color: '#5a7c3e'}}>Смакуем</span>
+              <span className="font-display text-5xl font-bold text-foreground tracking-wider -mt-3">КЕЙТЕРИНГ</span>
+              <svg className="absolute -bottom-2 left-0 w-full h-8" viewBox="0 0 400 30" fill="none">
+                <path d="M2 15 Q100 8, 200 12 T395 15" stroke="#5a7c3e" strokeWidth="2.5" fill="none" opacity="0.7"/>
               </svg>
             </div>
           </div>
@@ -283,10 +283,10 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
               <div className="relative flex flex-col items-center md:items-start leading-none mb-4">
-                <span className="font-handwriting text-2xl text-background">Смакуем</span>
-                <span className="font-display text-4xl font-bold text-background tracking-wider -mt-1">КЕЙТЕРИНГ</span>
-                <svg className="absolute -bottom-1 left-0 md:left-0 w-48 h-6" viewBox="0 0 200 25" fill="none">
-                  <path d="M2 12 Q50 5, 100 10 T195 12" stroke="white" strokeWidth="2" fill="none" opacity="0.8"/>
+                <span className="font-handwriting text-4xl text-background">Смакуем</span>
+                <span className="font-display text-4xl font-bold text-background tracking-wider -mt-2">КЕЙТЕРИНГ</span>
+                <svg className="absolute -bottom-1 left-0 md:left-0 w-full h-6" viewBox="0 0 250 25" fill="none">
+                  <path d="M2 12 Q60 7, 125 10 T245 12" stroke="white" strokeWidth="2" fill="none" opacity="0.8"/>
                 </svg>
               </div>
               <p className="opacity-80">Вкусные блюда для вашего события</p>
