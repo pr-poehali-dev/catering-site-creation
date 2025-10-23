@@ -260,10 +260,10 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
               <div className="relative flex flex-col items-center md:items-start leading-none mb-4">
-                <span className="font-handwriting text-4xl text-background italic drop-shadow-lg" style={{letterSpacing: '0.05em'}}>Смакуем</span>
-                <span className="font-display text-4xl font-bold text-background tracking-[0.25em] -mt-2">КЕЙТЕРИНГ</span>
-                <svg className="absolute -bottom-1 left-0 md:left-0 w-full h-6" viewBox="0 0 250 25" fill="none">
-                  <path d="M2 12 Q60 7, 125 10 T245 12" stroke="white" strokeWidth="2" fill="none" opacity="0.8"/>
+                <span className="font-handwriting text-6xl text-background italic drop-shadow-lg" style={{letterSpacing: '0.05em'}}>Смакуем</span>
+                <span className="font-display text-3xl font-bold text-background tracking-[0.25em] -mt-3">КЕЙТЕРИНГ</span>
+                <svg className="absolute -bottom-2 left-0 w-full h-8" viewBox="0 0 400 30" fill="none">
+                  <path d="M2 15 Q100 8, 200 12 T395 15" stroke="white" strokeWidth="3" fill="none" opacity="0.8" strokeLinecap="round"/>
                 </svg>
               </div>
               <p className="opacity-80">Вкусные блюда для вашего события</p>
