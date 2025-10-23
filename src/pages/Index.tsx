@@ -249,7 +249,7 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-bold mb-4">
-              <span className="font-handwriting text-primary">Оформить</span> заказ
+              <span className="font-handwriting text-6xl italic drop-shadow-md" style={{color: '#5a7c3e', letterSpacing: '0.05em'}}>Оформить заказ</span>
             </h2>
             <p className="text-xl text-muted-foreground">Заполните форму и мы свяжемся с вами</p>
           </div>
