@@ -67,6 +67,50 @@ const Index = () => {
     }
   ];
 
+  const pricingOptions = [
+    {
+      title: "Базовый",
+      price: "от 1500",
+      unit: "₽/чел",
+      features: [
+        "3 вида холодных закусок",
+        "2 вида горячих блюд",
+        "Салаты и гарниры",
+        "Напитки (чай, кофе, вода)",
+        "Базовая сервировка"
+      ],
+      popular: false
+    },
+    {
+      title: "Премиум",
+      price: "от 2500",
+      unit: "₽/чел",
+      features: [
+        "6 видов холодных закусок",
+        "4 вида горячих блюд",
+        "Фуршетное меню",
+        "Напитки и бар",
+        "Премиум сервировка",
+        "Официанты"
+      ],
+      popular: true
+    },
+    {
+      title: "VIP",
+      price: "от 4000",
+      unit: "₽/чел",
+      features: [
+        "Неограниченное меню",
+        "Авторские блюда от шефа",
+        "Полный бар с барменом",
+        "Профессиональная команда",
+        "Декор и оформление",
+        "Индивидуальный подход"
+      ],
+      popular: false
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border relative">
@@ -239,6 +283,52 @@ const Index = () => {
                   <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
                   <p className="text-muted-foreground">{item.description}</p>
                 </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 relative z-10">
+        <div className="container mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-5xl font-bold mb-4">
+              <span className="font-handwriting text-6xl italic drop-shadow-md" style={{color: '#5a7c3e', letterSpacing: '0.05em'}}>Тарифы</span>
+            </h2>
+            <p className="text-xl text-muted-foreground">Выберите подходящий пакет для вашего мероприятия</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {pricingOptions.map((option, index) => (
+              <Card
+                key={index}
+                className={`p-8 hover:shadow-2xl transition-all duration-300 border-2 relative ${
+                  option.popular ? 'border-primary shadow-lg scale-105' : ''
+                }`}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {option.popular && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-6 py-1 rounded-full text-sm font-semibold">
+                    Популярный
+                  </div>
+                )}
+                <div className="text-center mb-6">
+                  <h3 className="text-3xl font-bold mb-2">{option.title}</h3>
+                  <div className="flex items-baseline justify-center gap-1">
+                    <span className="text-5xl font-bold text-primary">{option.price}</span>
+                    <span className="text-muted-foreground">{option.unit}</span>
+                  </div>
+                </div>
+                <ul className="space-y-4 mb-8">
+                  {option.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <Icon name="Check" size={20} className="text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button className="w-full" variant={option.popular ? "default" : "outline"}>
+                  Выбрать тариф
+                </Button>
               </Card>
             ))}
           </div>
