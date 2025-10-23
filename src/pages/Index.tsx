@@ -98,7 +98,7 @@ const Index = () => {
             <div className="animate-fade-in">
               <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6">
                 Вкусные блюда<br/>
-                <span className="font-handwriting text-primary text-7xl md:text-8xl">для вашего события</span>
+                <span className="font-handwriting text-7xl md:text-8xl italic drop-shadow-md" style={{color: '#5a7c3e', letterSpacing: '0.05em'}}>для вашего события</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                 Превращаем каждое мероприятие в кулинарный шедевр. 
@@ -129,7 +129,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-bold mb-4">
-              <span className="font-handwriting text-accent">Мероприятия</span>
+              <span className="font-handwriting text-6xl italic drop-shadow-md" style={{color: '#5a7c3e', letterSpacing: '0.05em'}}>Мероприятия</span>
             </h2>
             <p className="text-xl text-muted-foreground">Обслуживаем события любого формата</p>
           </div>
@@ -155,7 +155,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-bold mb-4">
-              Наше <span className="font-handwriting text-secondary">меню</span>
+              Наше <span className="font-handwriting text-6xl italic drop-shadow-md" style={{color: '#5a7c3e', letterSpacing: '0.05em'}}>меню</span>
             </h2>
             <p className="text-xl text-muted-foreground">Авторские блюда от шеф-повара</p>
           </div>
