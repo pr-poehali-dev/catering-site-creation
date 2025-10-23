@@ -21,7 +21,8 @@ export default {
 			fontFamily: {
 				sans: ['Montserrat', 'sans-serif'],
 				serif: ['Playfair Display', 'serif'],
-				handwriting: ['Cormorant Garamond', 'serif'],
+				handwriting: ['Great Vibes', 'cursive'],
+				display: ['Oswald', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

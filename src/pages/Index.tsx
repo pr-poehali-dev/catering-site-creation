@@ -78,7 +78,10 @@ const Index = () => {
       <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border relative">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <span className="font-serif text-4xl font-bold text-primary">Смакуем</span>
+            <div className="flex flex-col items-start leading-none">
+              <span className="font-handwriting text-3xl text-primary">Смакуем</span>
+              <span className="font-display text-5xl font-bold text-foreground tracking-wider -mt-2">КЕЙТЕРИНГ</span>
+            </div>
           </div>
           <nav className="hidden md:flex gap-8">
             <a href="#home" className="text-foreground hover:text-primary transition-colors">Главная</a>
@@ -276,7 +279,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
-              <h3 className="font-serif text-3xl font-bold mb-4">Смакуем</h3>
+              <div className="flex flex-col items-center md:items-start leading-none mb-4">
+                <span className="font-handwriting text-2xl text-background">Смакуем</span>
+                <span className="font-display text-4xl font-bold text-background tracking-wider -mt-1">КЕЙТЕРИНГ</span>
+              </div>
               <p className="opacity-80">Вкусные блюда для вашего события</p>
             </div>
             <div>
