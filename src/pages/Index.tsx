@@ -14,6 +14,7 @@ const Index = () => {
     eventType: "",
     message: ""
   });
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -72,8 +73,8 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="relative flex flex-col items-start leading-none">
-              <span className="font-handwriting text-6xl italic drop-shadow-md" style={{color: '#5a7c3e', letterSpacing: '0.05em'}}>Смакуем</span>
-              <span className="font-display text-3xl font-bold text-foreground tracking-[0.25em] -mt-3">КЕЙТЕРИНГ</span>
+              <span className="font-handwriting text-4xl sm:text-6xl italic drop-shadow-md" style={{color: '#5a7c3e', letterSpacing: '0.05em'}}>Смакуем</span>
+              <span className="font-display text-xl sm:text-3xl font-bold text-foreground tracking-[0.25em] -mt-2 sm:-mt-3">КЕЙТЕРИНГ</span>
               <svg className="absolute -bottom-2 left-0 w-full h-8" viewBox="0 0 400 30" fill="none">
                 <path d="M2 15 Q100 8, 200 12 T395 15" stroke="#5a7c3e" strokeWidth="3" fill="none" opacity="0.8" strokeLinecap="round"/>
               </svg>
@@ -97,11 +98,59 @@ const Index = () => {
               <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-300"></span>
             </a>
           </nav>
-          <Button className="hidden md:flex shadow-lg hover:shadow-xl transition-shadow duration-300 bg-primary hover:bg-primary/90">
-            <Icon name="Phone" size={16} className="mr-2" />
-            Заказать
-          </Button>
+          <div className="flex items-center gap-4">
+            <Button className="hidden md:flex shadow-lg hover:shadow-xl transition-shadow duration-300 bg-primary hover:bg-primary/90">
+              <Icon name="Phone" size={16} className="mr-2" />
+              Заказать
+            </Button>
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="md:hidden"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <Icon name={isMobileMenuOpen ? "X" : "Menu"} size={24} />
+            </Button>
+          </div>
         </div>
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 w-full bg-background/98 backdrop-blur-md border-b border-border shadow-lg animate-in slide-in-from-top duration-300">
+            <nav className="container mx-auto px-4 py-4 flex flex-col gap-2">
+              <a 
+                href="#home" 
+                className="px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-300 font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Главная
+              </a>
+              <a 
+                href="#menu" 
+                className="px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-300 font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Меню
+              </a>
+              <a 
+                href="#services" 
+                className="px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-300 font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Мероприятия
+              </a>
+              <a 
+                href="#contacts" 
+                className="px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-300 font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Контакты
+              </a>
+              <Button className="w-full mt-2" onClick={() => setIsMobileMenuOpen(false)}>
+                <Icon name="Phone" size={16} className="mr-2" />
+                Заказать
+              </Button>
+            </nav>
+          </div>
+        )}
       </header>
 
       <section id="home" className="pt-32 pb-20 px-4 relative z-10">
