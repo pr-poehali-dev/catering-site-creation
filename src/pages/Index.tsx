@@ -73,7 +73,7 @@ const Index = () => {
           <div className="flex items-center gap-2">
             <div className="relative flex flex-col items-start leading-none">
               <span className="font-handwriting text-6xl" style={{color: '#5a7c3e'}}>Смакуем</span>
-              <span className="font-display text-3xl font-bold text-foreground tracking-wider -mt-3">КЕЙТЕРИНГ</span>
+              <span className="font-display text-3xl font-bold text-foreground tracking-[0.3em] -mt-3 italic">КЕЙТЕРИНГ</span>
               <svg className="absolute -bottom-2 left-0 w-full h-8" viewBox="0 0 400 30" fill="none">
                 <path d="M2 15 Q100 8, 200 12 T395 15" stroke="#5a7c3e" strokeWidth="2.5" fill="none" opacity="0.7"/>
               </svg>
@@ -261,7 +261,7 @@ const Index = () => {
             <div>
               <div className="relative flex flex-col items-center md:items-start leading-none mb-4">
                 <span className="font-handwriting text-4xl text-background">Смакуем</span>
-                <span className="font-display text-4xl font-bold text-background tracking-wider -mt-2">КЕЙТЕРИНГ</span>
+                <span className="font-display text-4xl font-bold text-background tracking-[0.3em] -mt-2 italic">КЕЙТЕРИНГ</span>
                 <svg className="absolute -bottom-1 left-0 md:left-0 w-full h-6" viewBox="0 0 250 25" fill="none">
                   <path d="M2 12 Q60 7, 125 10 T245 12" stroke="white" strokeWidth="2" fill="none" opacity="0.8"/>
                 </svg>
