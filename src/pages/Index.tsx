@@ -129,7 +129,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-bold mb-4">
-              <span className="font-handwriting text-accent">Типы</span> мероприятий
+              <span className="font-handwriting text-accent">Мероприятия</span>
             </h2>
             <p className="text-xl text-muted-foreground">Обслуживаем события любого формата</p>
           </div>
